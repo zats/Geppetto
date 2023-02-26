@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C915D5A29AAA03A00C594E3 /* Setting in Frameworks */ = {isa = PBXBuildFile; productRef = 5C915D5929AAA03A00C594E3 /* Setting */; };
+		5CB63DFE29AA8364009807D2 /* GPTShortcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB63DFD29AA8364009807D2 /* GPTShortcutsApp.swift */; };
+		5CB63E0029AA8364009807D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB63DFF29AA8364009807D2 /* ContentView.swift */; };
+		5CB63E0229AA8365009807D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB63E0129AA8365009807D2 /* Assets.xcassets */; };
+		5CB63E0529AA8365009807D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB63E0429AA8365009807D2 /* Preview Assets.xcassets */; };
+		5CB63E0F29AA83F6009807D2 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB63E0E29AA83F6009807D2 /* AppShortcuts.swift */; };
+		5CB63E1629AA8481009807D2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB63E1529AA8481009807D2 /* ViewModel.swift */; };
+		5CB63E1B29AA874A009807D2 /* ExecuteGPTIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB63E1A29AA874A009807D2 /* ExecuteGPTIntent.swift */; };
+		5CB63E1E29AA8965009807D2 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CB63E1D29AA8965009807D2 /* OpenAISwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5CB63DFA29AA8364009807D2 /* Geppetto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geppetto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB63DFD29AA8364009807D2 /* GPTShortcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTShortcutsApp.swift; sourceTree = "<group>"; };
+		5CB63DFF29AA8364009807D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5CB63E0129AA8365009807D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CB63E0429AA8365009807D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CB63E0E29AA83F6009807D2 /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
+		5CB63E1529AA8481009807D2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5CB63E1929AA865E009807D2 /* GPTShortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPTShortcuts.entitlements; sourceTree = "<group>"; };
+		5CB63E1A29AA874A009807D2 /* ExecuteGPTIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteGPTIntent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CB63DF729AA8364009807D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB63E1E29AA8965009807D2 /* OpenAISwift in Frameworks */,
+				5C915D5A29AAA03A00C594E3 /* Setting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CB63DF129AA8364009807D2 = {
+			isa = PBXGroup;
+			children = (
+				5CB63DFC29AA8364009807D2 /* GPTShortcuts */,
+				5CB63DFB29AA8364009807D2 /* Products */,
+				5CB63E2829AA9EE7009807D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CB63DFB29AA8364009807D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CB63DFA29AA8364009807D2 /* Geppetto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CB63DFC29AA8364009807D2 /* GPTShortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				5CB63E1F29AA980A009807D2 /* Views */,
+				5CB63E1929AA865E009807D2 /* GPTShortcuts.entitlements */,
+				5CB63E1429AA8477009807D2 /* ViewModels */,
+				5CB63E0D29AA83E9009807D2 /* Shortcuts */,
+				5CB63DFD29AA8364009807D2 /* GPTShortcutsApp.swift */,
+				5CB63DFF29AA8364009807D2 /* ContentView.swift */,
+				5CB63E0129AA8365009807D2 /* Assets.xcassets */,
+				5CB63E0329AA8365009807D2 /* Preview Content */,
+			);
+			path = GPTShortcuts;
+			sourceTree = "<group>";
+		};
+		5CB63E0329AA8365009807D2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5CB63E0429AA8365009807D2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CB63E0D29AA83E9009807D2 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				5CB63E0E29AA83F6009807D2 /* AppShortcuts.swift */,
+				5CB63E1A29AA874A009807D2 /* ExecuteGPTIntent.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		5CB63E1429AA8477009807D2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5CB63E1529AA8481009807D2 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5CB63E1F29AA980A009807D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5CB63E2829AA9EE7009807D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CB63DF929AA8364009807D2 /* GPTShortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB63E0829AA8365009807D2 /* Build configuration list for PBXNativeTarget "GPTShortcuts" */;
+			buildPhases = (
+				5CB63DF629AA8364009807D2 /* Sources */,
+				5CB63DF729AA8364009807D2 /* Frameworks */,
+				5CB63DF829AA8364009807D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPTShortcuts;
+			packageProductDependencies = (
+				5CB63E1D29AA8965009807D2 /* OpenAISwift */,
+				5C915D5929AAA03A00C594E3 /* Setting */,
+			);
+			productName = GPTShortcuts;
+			productReference = 5CB63DFA29AA8364009807D2 /* Geppetto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CB63DF229AA8364009807D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5CB63DF929AA8364009807D2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 5CB63DF529AA8364009807D2 /* Build configuration list for PBXProject "GPTShortcuts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CB63DF129AA8364009807D2;
+			packageReferences = (
+				5CB63E1C29AA8965009807D2 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				5C915D5829AAA03A00C594E3 /* XCRemoteSwiftPackageReference "Setting" */,
+			);
+			productRefGroup = 5CB63DFB29AA8364009807D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CB63DF929AA8364009807D2 /* GPTShortcuts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CB63DF829AA8364009807D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB63E0529AA8365009807D2 /* Preview Assets.xcassets in Resources */,
+				5CB63E0229AA8365009807D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CB63DF629AA8364009807D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB63E0F29AA83F6009807D2 /* AppShortcuts.swift in Sources */,
+				5CB63E1B29AA874A009807D2 /* ExecuteGPTIntent.swift in Sources */,
+				5CB63E0029AA8364009807D2 /* ContentView.swift in Sources */,
+				5CB63DFE29AA8364009807D2 /* GPTShortcutsApp.swift in Sources */,
+				5CB63E1629AA8481009807D2 /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5CB63E0629AA8365009807D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CB63E0729AA8365009807D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CB63E0929AA8365009807D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GPTShortcuts/GPTShortcuts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPTShortcuts/Preview Content\"";
+				DEVELOPMENT_TEAM = 5KE88HWMKJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zats.GPTShortcuts;
+				PRODUCT_NAME = Geppetto;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CB63E0A29AA8365009807D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GPTShortcuts/GPTShortcuts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPTShortcuts/Preview Content\"";
+				DEVELOPMENT_TEAM = 5KE88HWMKJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zats.GPTShortcuts;
+				PRODUCT_NAME = Geppetto;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CB63DF529AA8364009807D2 /* Build configuration list for PBXProject "GPTShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB63E0629AA8365009807D2 /* Debug */,
+				5CB63E0729AA8365009807D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB63E0829AA8365009807D2 /* Build configuration list for PBXNativeTarget "GPTShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB63E0929AA8365009807D2 /* Debug */,
+				5CB63E0A29AA8365009807D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C915D5829AAA03A00C594E3 /* XCRemoteSwiftPackageReference "Setting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/Setting";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5CB63E1C29AA8965009807D2 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C915D5929AAA03A00C594E3 /* Setting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C915D5829AAA03A00C594E3 /* XCRemoteSwiftPackageReference "Setting" */;
+			productName = Setting;
+		};
+		5CB63E1D29AA8965009807D2 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CB63E1C29AA8965009807D2 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5CB63DF229AA8364009807D2 /* Project object */;
+}
